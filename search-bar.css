@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f37121;
+}
+
+.search-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* This will keep the effect in the center */
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.search-bar:hover > .search-text {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-button {
+  color: #e84118;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2f3640;
+  display: flex;
+  transition: 0.9s;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar:hover > .search-button {
+  background-color: white;
+}
+
+.search-text {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  line-height: 40px;
+  transition: 0.4s;
+  width: 0px;
+}
